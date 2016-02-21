@@ -32,6 +32,7 @@ $(window).load(function() {
                 var average_bpm = current_bpm;
             }
             last_bpm = average_bpm;
+            prev_timestamp = now_timestamp;
 
             console.log(now_timestamp + ' - ' + prev_timestamp + ' // ' + last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
 
