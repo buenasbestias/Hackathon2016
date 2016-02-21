@@ -23,7 +23,6 @@ $(window).load(function() {
             width: "100px",
             height: "100px",
             'padding-top': "50px",
-            'padding-bottom': "50px",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
