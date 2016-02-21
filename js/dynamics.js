@@ -1,6 +1,6 @@
 $(window).load(function() {
 
-    var current_bpm = 0;
+    var last_bpm = 0;
     var prev_timestamp = 0;
 
     $('#pulse_button').click(function() {
@@ -24,14 +24,16 @@ $(window).load(function() {
             var now_timestamp = Date.now();
             var timestamp_difference = now_timestamp - prev_timestamp;
             var seconds_timestamp_difference = timestamp_difference / 1000;
-            var last_bpm = 60 / seconds_timestamp_difference;
+            var current_bpm = 60 / seconds_timestamp_difference;
 
-            if (current_bpm !== 0) {
+            if (last_bpm !== 0) {
                 var average_bpm = (last_bpm + current_bpm) / 2;
             } else {
-                var average_bpm = last_bpm;
+                var average_bpm = current_bpm;
             }
             last_bpm = average_bpm;
+
+            console.log(last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
 
             $('#beats_int').val(last_bpm);
         } else {
