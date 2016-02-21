@@ -20,16 +20,13 @@ $(window).load(function() {
 
     $('#pulse_button').click(function() {
         $(this).animate({
-            width: "100",
-            height: "100",
+            width: "100px",
+            height: "100px",
             opacity: 0.5
-        }, {
-            duration: 100
-        },
-        complete: function () {
+        }, 100, "swing", function () {
             $(this).animate({
-                width: "200",
-                height: "200",
+                width: "200px",
+                height: "200px",
                 opacity: 1
             }, 200);
         }
