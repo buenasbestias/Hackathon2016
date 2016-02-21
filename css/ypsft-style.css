@@ -101,6 +101,44 @@ h1 {
 	padding: 50px 0;
 	margin-top: 100px;
 }
+.moods li {
+	float: left;
+	margin: 10px 5px;
+	list-style-type: none;
+}
+.emoji {
+	padding: 23px;
+}
+.happy {
+	background: url('../img/happy-icon.png') no-repeat 0 0;
+}
+.happy:hover {
+	background: url('../img/happy-icon-hover.png') no-repeat 0 0;
+}
+.angry {
+	background: url('../img/angry-icon.png') no-repeat 0 0;
+}
+.angry:hover {
+	background: url('../img/angry-icon-hover.png') no-repeat 0 0;
+}
+.sad {
+	background: url('../img/sad-icon.png') no-repeat 0 0;
+}
+.sad:hover {
+	background: url('../img/sad-icon-hover.png') no-repeat 0 0;
+}
+.relaxed {
+	background: url('../img/relaxed-icon.png') no-repeat 0 0;
+}
+.relaxed:hover {
+	background: url('../img/relaxed-icon-hover.png') no-repeat 0 0;
+}
+.excited {
+	background: url('../img/excited-icon.png') no-repeat 0 0;
+}
+.excited:hover {
+	background: url('../img/excited-icon-hover.png') no-repeat 0 0;
+}
 
 
 /* HOVER */
