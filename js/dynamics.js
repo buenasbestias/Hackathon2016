@@ -1,4 +1,5 @@
 $(document).load(function() {
+    alert('loaded!');
     $('.ok').click(function() {
         alert('Test');
         var beats_int = parseInt($('#beats_int').val());
