@@ -30,7 +30,7 @@ $(window).load(function() {
             $(this).animate({
                 width: "200",
                 height: "200",
-                opacity: 1,
+                opacity: 1
             }, 200);
         }
         );
