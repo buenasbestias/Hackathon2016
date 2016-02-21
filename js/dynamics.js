@@ -22,16 +22,16 @@ $(window).load(function() {
         $(this).animate({
             width: "100",
             height: "100",
-            opacity: 0.5,
-            duration: 100,
-            complete: function () {
-                $(this).animate({
-                    width: "200",
-                    height: "200",
-                    opacity: 1,
-                    duration: 200
-                });
-            }
+            opacity: 0.5
+        }, {
+            duration: 100
+        },
+        complete: function () {
+            $(this).animate({
+                width: "200",
+                height: "200",
+                opacity: 1,
+            }, 200);
         });
     });
 
