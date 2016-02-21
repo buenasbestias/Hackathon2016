@@ -22,11 +22,13 @@ $(window).load(function() {
         $(this).animate({
             width: "100px",
             height: "100px",
+            padding: "50px 0 50px 0",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
                 width: "200px",
                 height: "200px",
+                padding: "0",
                 opacity: 1
             }, 200);
         });
