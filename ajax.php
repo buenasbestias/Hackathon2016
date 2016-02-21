@@ -2,6 +2,16 @@
 
 include_once('.env');
 
-echo ECHONEST_API;
+$bpm = $_GET['bpm'];
+
+$ch = curl_init('http://developer.echonest.com/api/v4/song/search?api_key=' . ECHONEST_API . '&max_tempo=' . $bpm . '&min_tempo=' . $bpm);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+$data = curl_exec($ch);
+curl_close($ch);
+
+echo "<pre>";
+var_dump($data);
+echo "</pre>";
 
 ?>
