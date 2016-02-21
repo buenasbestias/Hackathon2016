@@ -22,6 +22,8 @@ $(window).load(function() {
         $(this).animate({
             width: "100px",
             height: "100px",
+            margin-top: "50px",
+            margin-bottom: "50px",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
@@ -29,8 +31,7 @@ $(window).load(function() {
                 height: "200px",
                 opacity: 1
             }, 200);
-        }
-        );
+        });
     });
 
 });
