@@ -35,11 +35,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 m-top-md">
-            <a href="#">
-              <img src="img/blue-circle.png" class="img-responsive center-block hvr-pulse">
-            </a>
-          </div>
+            <div class="col-lg-12 m-top-md">
+                <img src="img/blue-circle.png" id="pulse_button" class="img-responsive center-block">
+            </div>
         </div>
 
         <div class="row">

@@ -14,4 +14,25 @@ $(window).load(function() {
 
         return false;
     });
+
+    var current_bpm = 0;
+    var prev_timestamp = 0;
+
+    $('#pulse_button').click(function() {
+        $(this).animate({
+            width: "50%",
+            height: "50%",
+            opacity: 0.75,
+            duration: 100,
+            complete: function () {
+                $(this).animate({
+                    width: "200%",
+                    height: "200%",
+                    opacity: 1,
+                    duration: 200
+                });
+            }
+        })
+    });
+
 });
