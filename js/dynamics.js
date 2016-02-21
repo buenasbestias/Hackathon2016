@@ -22,8 +22,8 @@ $(window).load(function() {
         $(this).animate({
             width: "100px",
             height: "100px",
-            margin-top: "50px",
-            margin-bottom: "50px",
+            marginTop: "50px",
+            marginBottom: "50px",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
