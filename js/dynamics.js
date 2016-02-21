@@ -33,7 +33,7 @@ $(window).load(function() {
             }
             last_bpm = average_bpm;
 
-            console.log(last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
+            console.log(now_timestamp + ' - ' + prev_timestamp + ' // ' + last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
 
             $('#beats_int').val(last_bpm);
         } else {
