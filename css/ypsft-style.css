@@ -54,6 +54,12 @@ h1 {
 .form-control {
 	width: 100px;
 }
+
+.button-container {
+    width: 200px;
+    height: 200px;
+}
+
 .ok {
 	color: #0080FF;
 	text-align: center;
