@@ -22,7 +22,7 @@ $(window).load(function() {
         $(this).animate({
             width: "100",
             height: "100",
-            opacity: 0.75,
+            opacity: 0.5,
             duration: 100,
             complete: function () {
                 $(this).animate({
@@ -32,7 +32,7 @@ $(window).load(function() {
                     duration: 200
                 });
             }
-        })
+        });
     });
 
 });
