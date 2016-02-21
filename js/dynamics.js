@@ -1,5 +1,6 @@
 $(document).load(function() {
     $('.ok').click(function() {
+        alert('Test');
         var beats_int = parseInt($('#beats_int').val());
 
         $.ajax({
