@@ -10,7 +10,7 @@ $(window).load(function() {
             height: "125px",
             'padding-top': "25px",
             opacity: 0.5
-        }, 50, "swing", function () {
+        }, 75, "swing", function () {
             $(this).animate({
                 width: "150px",
                 height: "150px",
