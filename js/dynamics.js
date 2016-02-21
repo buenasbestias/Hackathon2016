@@ -20,9 +20,9 @@ $(window).load(function() {
 
     $('#pulse_button').click(function() {
         $(this).animate({
-            width: "50px",
-            height: "100px",
-            'padding-top': "50px",
+            width: "100px",
+            height: "125px",
+            'padding-top': "25px",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
