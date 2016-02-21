@@ -20,14 +20,14 @@ $(window).load(function() {
 
     $('#pulse_button').click(function() {
         $(this).animate({
-            width: "100px",
-            height: "150px",
+            width: "50px",
+            height: "100px",
             'padding-top': "50px",
             opacity: 0.5
         }, 100, "swing", function () {
             $(this).animate({
-                width: "200px",
-                height: "200px",
+                width: "150px",
+                height: "150px",
                 padding: "0",
                 opacity: 1
             }, 200);
