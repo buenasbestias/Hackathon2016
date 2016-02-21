@@ -32,7 +32,8 @@ $(window).load(function() {
                 height: "200",
                 opacity: 1,
             }, 200);
-        });
+        }
+        );
     });
 
 });
