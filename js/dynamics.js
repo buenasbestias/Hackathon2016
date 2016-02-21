@@ -10,13 +10,13 @@ $(window).load(function() {
             height: "125px",
             'padding-top': "25px",
             opacity: 0.5
-        }, 100, "swing", function () {
+        }, 50, "swing", function () {
             $(this).animate({
                 width: "150px",
                 height: "150px",
                 padding: "0",
                 opacity: 1
-            }, 200);
+            }, 50);
         });
 
         //Beats counting
