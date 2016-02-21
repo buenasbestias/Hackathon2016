@@ -36,7 +36,7 @@ $(window).load(function() {
 
             console.log(now_timestamp + ' - ' + prev_timestamp + ' // ' + last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
 
-            $('#beats_int').val(last_bpm);
+            $('#beats_int').val(Math.floor(last_bpm));
         } else {
             prev_timestamp = Date.now();
         }
