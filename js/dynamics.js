@@ -1,7 +1,5 @@
 $(window).load(function() {
-    alert('loaded!');
     $('.ok').click(function() {
-        alert('Test');
         var beats_int = parseInt($('#beats_int').val());
 
         $.ajax({
@@ -10,8 +8,8 @@ $(window).load(function() {
             data: {
                 bpm: beats_int
             }
-        }).done(function(msg) {
-            alert(msg);
+        }).done(function(data) {
+            alert(data);
         });
 
         return false;
