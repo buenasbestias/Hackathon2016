@@ -50,7 +50,8 @@ $(window).load(function() {
                 bpm: beats_int
             }
         }).done(function(data) {
-            console.log(data);
+            var parsed_data = JSON.parse(data);
+            console.log(parsed_data);
         });
 
         return false;
