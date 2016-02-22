@@ -70,7 +70,9 @@ $(window).load(function() {
         var meters_minute = 0.32 * beats_int;
 
         $('.fact_2_bpm').html(beats_int);
-        $('.fact_2_data').html(meters_minute);
+        $('.fact_2_data').html(Math.floor(meters_minute));
+
+        $('#all_results').show();
 
         return false;
     });

@@ -97,6 +97,10 @@ h1 {
 	font-size: 14px;
 	color: #01ADDD;
 }
+
+#all_results {
+    display: none;
+}
 .section-results {
 	background-color: #01A352;
 	color: #fff;
@@ -254,16 +258,16 @@ h1 {
     bottom: 50%;
   }
   /*
-  33% { 
-    bottom: 50%; 
+  33% {
+    bottom: 50%;
     top: 0;
   }
-  66% { 
-    bottom: 0; 
+  66% {
+    bottom: 0;
     top: 50%;
   }
-  100% { 
-    bottom: 0; 
+  100% {
+    bottom: 0;
     top: 100%;
   }*/
 }
@@ -284,9 +288,9 @@ h1 {
 
 /* TRUCK/MUSIC */
 
-.truck	{ 
-	width: 400px; 
-	height: 100px; 
+.truck	{
+	width: 400px;
+	height: 100px;
 	background-image: url('../img/truck.png');
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
@@ -298,7 +302,7 @@ h1 {
 	from { background-position: -50% 0; }
 	to { background-position: 180% 0; }
 }
-.music	{ 
+.music	{
 	width: 80px;
     height: 100px;
     background-image: url('../img/music-notes.png');
@@ -312,7 +316,7 @@ h1 {
 	from { background-position: 0% -50%; }
 	to { background-position: 0% 250%; }
 }
-.music-slow	{ 
+.music-slow	{
 	width: 80px;
     height: 100px;
     background-image: url('../img/music-notes-sad.png');
@@ -341,10 +345,10 @@ h1 {
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;    
+    -ms-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
- 
+
 #crossfade img.top:hover {
     opacity:0;
 }
