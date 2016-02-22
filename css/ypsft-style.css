@@ -99,6 +99,9 @@ h1 {
 	padding: 50px 0;
 	margin-top: 100px;
 }
+.moods {
+	padding-left: 40px;
+}
 .moods li {
 	float: left;
 	margin: 10px 5px;

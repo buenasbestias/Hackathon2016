@@ -4,7 +4,9 @@
 }
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+	.moods {
+		padding-left: 0;
+	}
 }
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12,6 +14,19 @@
 }
 
 /* xs */
-@media (max-width: 767px) {
-  
+@media (min-width: 667px) and (max-width: 767px) {
+	.moods {
+    	padding-left: 182px;
+	}
+}
+@media (min-width: 321px) and (max-width: 666px) {
+	.moods {
+    	padding-left: 40px;
+	}
+}
+/* xs */
+@media (max-width: 320px) {
+  	.moods {
+    	padding-left: 8px;
+	}
 }
