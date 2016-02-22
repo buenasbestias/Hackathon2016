@@ -14,6 +14,6 @@ curl_setopt($ch_echonest, CURLOPT_HEADER, 0);
 $data['echonest'] = json_decode(curl_exec($ch_echonest));
 curl_close($ch_echonest);
 
-echo $data;
+var_dump($data);
 
 ?>
