@@ -8,11 +8,11 @@ include_once('.env');
 
 $bpm = $_GET['bpm'];
 
-$ch = curl_init('http://developer.echonest.com/api/v4/song/search?api_key=' . ECHONEST_API . '&max_tempo=' . $bpm . '&min_tempo=' . $bpm);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HEADER, 0);
-$data = curl_exec($ch);
-curl_close($ch);
+$ch_echonest = curl_init('http://developer.echonest.com/api/v4/song/search?api_key=' . ECHONEST_API . '&max_tempo=' . $bpm . '&min_tempo=' . $bpm);
+curl_setopt($ch_echonest, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch_echonest, CURLOPT_HEADER, 0);
+$data['echonest'] = json_decode(curl_exec($ch_echonest));
+curl_close($ch_echonest);
 
 echo $data;
 
