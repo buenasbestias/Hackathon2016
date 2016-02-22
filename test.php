@@ -66,8 +66,8 @@
 
             <div class="results m-top-lg">
               <a href="#">
-                <p class="song">Somewhere over the rainbow</p>
-                <p class="author">by <span class="author_span">Israel Kamakawiwo'ole</span></p>
+                <p class="song"></p>
+                <p class="author">by <span class="author_span"></span></p>
               </a>
             </div>
 
