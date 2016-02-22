@@ -34,8 +34,6 @@ $(window).load(function() {
             last_bpm = average_bpm;
             prev_timestamp = now_timestamp;
 
-            console.log(now_timestamp + ' - ' + prev_timestamp + ' // ' + last_bpm + ' / ' + average_bpm + ' / ' + current_bpm);
-
             $('#beats_int').val(Math.floor(last_bpm));
         } else {
             prev_timestamp = Date.now();
@@ -52,7 +50,7 @@ $(window).load(function() {
                 bpm: beats_int
             }
         }).done(function(data) {
-            alert(data);
+            console.log(data);
         });
 
         return false;

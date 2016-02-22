@@ -27,10 +27,5 @@ if (isset($spotify->tracks->items[0])) {
     $data['spotify_link'] = $spotify->tracks->items[0]->external_urls->spotify;
 }
 
-echo "<pre>";
-echo "<h1>EchoNest</h1>";
-var_dump($data);
-echo "<h1>Spotify</h1>";
-var_dump($spotify);
-echo "</pre>";
+echo json_encode($data);
 ?>
