@@ -32,32 +32,20 @@
           <div class="col-lg-12 text-center m-top-md">
             <h3>Hello!<br>We'll help you find</h3>
             <h1 class="m-top-lg">Your Perfect Song For Today</h1>
-            <p class="m-top-md">Please, select your current mood:</p>
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-                <ul class="moods">
-                  <a href="#" title="feelin' happy"><li class="emoji happy"></li></a>
-                  <a href="#" title="feelin' angry"><li class="emoji angry"></li></a>
-                  <a href="#" title="feelin' sad"><li class="emoji sad"></li></a>
-                  <a href="#" title="feelin' relaxed"><li class="emoji relaxed"></li></a>
-                  <a href="#" title="feelin' excited"><li class="emoji excited"></li></a>
-                </ul>
-              </div>
-            </div>
-            <p class="m-top">And give us a tune with your clicks!</p>
+            <p class="m-top">And give us a tune with your clicks! Just check your pulse and click the button below every time you feel your heart beat.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 m-top-md">
             <a href="#">
-              <img src="img/blue-circle.png" class="img-responsive center-block hvr-pulse">
+              <img src="img/blue-circle.png" id="pulse_button" class="img-responsive center-block">
             </a>
           </div>
         </div>
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="m-top-lg">Or if you like give us the BPM* of your choice:</p>
+            <p class="m-top-lg">Or you can give us the BPM* of your choice:</p>
             <form>
               <div class="form-group">
                 <input type="number" class="form-control center-block" id="beats_int" placeholder="e.g. 120">
@@ -110,7 +98,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- RANDOM FACT 1 -->
       <div class="container-fluid">
         <div class="row section-facts">
@@ -180,7 +168,7 @@
                 </div>
               </div>
             </div>
-            
+
             <p class="amatic text-center m-top">and improves the recovery time of patients who were suffering from heart disease.</p>
           </div>
         </div>
@@ -197,7 +185,7 @@
       <script src="js/dynamics.js" type="text/javascript"></script>
       <script type="text/javascript">
         var theCircle = document.querySelector("#circleDiv");
- 
+
         function setup() {
             theCircle.addEventListener("mouseover", setInitialClass, false);
 
@@ -208,7 +196,7 @@
             theCircle.addEventListener("oTransitionEnd", loopTransition, false);
         }
         setup();
-         
+
         function setInitialClass(e) {
             theCircle.className = "stateTwo";
         }
