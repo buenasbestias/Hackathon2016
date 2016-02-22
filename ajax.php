@@ -23,5 +23,7 @@ curl_setopt($ch_spotify, CURLOPT_HEADER, 0);
 $data['spotify'] = json_decode(curl_exec($ch_spotify));
 curl_close($ch_spotify);
 
+echo "<pre>";
 var_dump($data);
+echo "</pre>";
 ?>
