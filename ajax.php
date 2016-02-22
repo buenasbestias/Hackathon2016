@@ -15,7 +15,7 @@ $echonest = json_decode(curl_exec($ch_echonest));
 curl_close($ch_echonest);
 
 $data['echonest'] = $echonest->response->songs[0];
-$query = urlencode($song->artist_name . ' ' . $data['echonest']->title);
+$query = urlencode($data['echonest']->artist_name . ' ' . $data['echonest']->title);
 
 $ch_spotify = curl_init('https://api.spotify.com/v1/search?q=' . $query . '&type=track&limit=1');
 curl_setopt($ch_spotify, CURLOPT_RETURNTRANSFER, true);
