@@ -51,7 +51,7 @@ $(window).load(function() {
             }
         }).done(function(data) {
             var parsed_data = JSON.parse(data);
-            $('.author_span').html(parsed_data.echonest.artist_name);
+            $('.author_text').html(parsed_data.echonest.artist_name);
             $('.song').html(parsed_data.echonest.title);
 
             if (parsed_data.spotify_link) {
