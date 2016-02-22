@@ -11,6 +11,9 @@ body {
 a:hover {
 	text-decoration: none;
 }
+ul li {
+	list-style-type: none;
+}
 
 /* HEADERS */
 
@@ -44,9 +47,11 @@ h1 {
 	margin-top: 50px;
 }
 
-/* HEADER */
-
 /* FOOTER */
+
+footer {
+	padding-bottom: 30px;
+}
 
 /* CONTENT */
 

@@ -23,10 +23,16 @@
 	.moods {
     	padding-left: 40px;
 	}
+	.truck	{ 
+		width: 350px; 
+	}
 }
 /* xs */
 @media (max-width: 320px) {
   	.moods {
     	padding-left: 8px;
+	}
+	.truck	{ 
+		width: 300px; 
 	}
 }
