@@ -59,6 +59,13 @@ $(window).load(function() {
             }
         });
 
+        var midnight_timestamp = new Date().setHours(0,0,0,0);
+        var difference_to_midnight = (midnight_timestamp - now_timestamp) / 60000;
+
+        var beats_to_midnight = difference_to_midnight * beats_int;
+
+        $('.fact_1_data').html = beats_to_midnight;
+
         return false;
     });
 });
