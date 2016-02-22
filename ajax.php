@@ -14,6 +14,14 @@ curl_setopt($ch_echonest, CURLOPT_HEADER, 0);
 $data['echonest'] = json_decode(curl_exec($ch_echonest));
 curl_close($ch_echonest);
 
-var_dump($data);
+$song = $data['echonest']->response->songs[0];
+$query = urlencode($song->artist_name . ' ' . $song->title);
 
+$ch_spotify = curl_init('https://api.spotify.com/v1/search?q=' . $query . '&type=track&limit=1');
+curl_setopt($ch_spotify, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch_spotify, CURLOPT_HEADER, 0);
+$data['spotify'] = json_decode(curl_exec($ch_spotify));
+curl_close($ch_spotify);
+
+var_dump($data);
 ?>
