@@ -66,16 +66,21 @@
 
             <div class="results m-top-lg">
               <a href="#">
-                <p class="song">Somewhere over the rainbow</p>
-                <p class="author">by Israel Kamakawiwo'ole</p>
+                <p><span class="song">Somewhere over the rainbow</span><br><span class="author">by Israel Kamakawiwo'ole</span></p>
               </a>
             </div>
 
             <div class="row m-top">
               <div class="col-lg-4 col-lg-offset-4">
                 <div class="row">
-                  <div class="col-lg-4 col-lg-offset-4">
-                    <a class="spotify-link" href="#"><img src="img/logo-spotify.png"></a>
+                  <div class="col-lg-4">
+                    <a href="#"><img src="img/logo-spotify.png"></a>
+                  </div>
+                  <div class="col-lg-4">
+                    <a href="#"><img src="img/logo-itunes.png"></a>
+                  </div>
+                  <div class="col-lg-4">
+                    <a href="#"><img src="img/logo-google-music.png"></a>
                   </div>
                 </div>
               </div>
