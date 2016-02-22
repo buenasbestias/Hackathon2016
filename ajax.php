@@ -20,12 +20,15 @@ $query = urlencode($song->artist_name . ' ' . $song->title);
 $ch_spotify = curl_init('https://api.spotify.com/v1/search?q=' . $query . '&type=track&limit=1');
 curl_setopt($ch_spotify, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch_spotify, CURLOPT_HEADER, 0);
-$data['spotify'] = json_decode(curl_exec($ch_spotify));
+$spotify = json_decode(curl_exec($ch_spotify));
 curl_close($ch_spotify);
 
+$data['spotify_link'] = $spotify->tracks->items[0]->external_urls->spotify
+
 echo "<pre>";
+echo "<h1>EchoNest</h1>";
 var_dump($data);
 echo "<h1>Spotify</h1>";
-var_dump($data['spotify']->tracks->items[0]->external_urls);
+var_dump($spotify);
 echo "</pre>";
 ?>
