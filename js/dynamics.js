@@ -60,6 +60,7 @@ $(window).load(function() {
         });
 
         var midnight_timestamp = new Date().setHours(0,0,0,0);
+        var now_timestamp = Date.now();
         var difference_to_midnight = (midnight_timestamp - now_timestamp) / 60000;
 
         var beats_to_midnight = difference_to_midnight * beats_int;
