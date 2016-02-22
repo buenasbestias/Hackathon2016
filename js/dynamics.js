@@ -51,7 +51,12 @@ $(window).load(function() {
             }
         }).done(function(data) {
             var parsed_data = JSON.parse(data);
-            console.log(parsed_data);
+            $('.author_span').html(parsed_data.echonest.artist_name);
+            $('.song').html(parsed_data.echonest.title);
+
+            if (parsed_data.spotify_link) {
+                $('.spotify-place').html('<a class="spotify-link" href="' + parsed_data.spotify_link + '"><img src="img/logo-spotify.png"></a>')
+            }
         });
 
         return false;

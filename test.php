@@ -67,14 +67,14 @@
             <div class="results m-top-lg">
               <a href="#">
                 <p class="song">Somewhere over the rainbow</p>
-                <p class="author">by Israel Kamakawiwo'ole</p>
+                <p class="author">by <span class="author_span">Israel Kamakawiwo'ole</span></p>
               </a>
             </div>
 
             <div class="row m-top">
               <div class="col-lg-4 col-lg-offset-4">
                 <div class="row">
-                  <div class="col-lg-4 col-lg-offset-4">
+                  <div class="col-lg-4 col-lg-offset-4 spotify-place">
                     <a class="spotify-link" href="#"><img src="img/logo-spotify.png"></a>
                   </div>
                 </div>
