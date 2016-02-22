@@ -23,7 +23,7 @@ curl_setopt($ch_spotify, CURLOPT_HEADER, 0);
 $spotify = json_decode(curl_exec($ch_spotify));
 curl_close($ch_spotify);
 
-$data['spotify_link'] = $spotify->tracks->items[0]->external_urls->spotify
+$data['spotify_link'] = $spotify->tracks->items[0]->external_urls->spotify;
 
 echo "<pre>";
 echo "<h1>EchoNest</h1>";
