@@ -25,6 +25,7 @@ curl_close($ch_spotify);
 
 echo "<pre>";
 var_dump($data);
+echo "<h1>Spotify</h1>";
 var_dump($data['spotify']->tracks->items[0]);
 echo "</pre>";
 ?>
