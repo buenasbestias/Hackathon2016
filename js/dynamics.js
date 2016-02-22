@@ -65,7 +65,7 @@ $(window).load(function() {
 
         var beats_to_midnight = difference_to_midnight * beats_int;
 
-        $('.fact_1_data').html = beats_to_midnight;
+        $('.fact_1_data').html(beats_to_midnight);
 
         return false;
     });
