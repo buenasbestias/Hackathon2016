@@ -67,6 +67,11 @@ $(window).load(function() {
 
         $('.fact_1_data').html(Math.floor(beats_to_midnight));
 
+        var meters_minute = 0.32 * beats_int;
+
+        $('.fact_2_bpm').html(beats_int);
+        $('.fact_2_data').html(meters_minute);
+
         return false;
     });
 });
